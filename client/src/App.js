@@ -1,18 +1,14 @@
-// App.js
+// frontend/src/App.js
 import React from 'react';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import WeatherApp from './components/WeatherComponent'; // Assuming this is your component
+import WeatherComponent from './components/WeatherComponent';
 
-const theme = createTheme({
-  // Define your theme here
-});
-
-function App() {
+const App = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <WeatherApp />
-    </ThemeProvider>
+    <div>
+
+      <WeatherComponent />
+    </div>
   );
-}
+};
 
 export default App;
